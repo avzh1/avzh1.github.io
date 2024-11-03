@@ -1,0 +1,30 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 1em; /* Adds a consistent offset around the content */
+    width: 80%; /* Takes up 80% of the viewport width */
+    max-width: 1800px; /* Optional max width for readability on larger screens */
+    margin: auto; /* Centers body within the viewport */
+}
+
+/* Layout styling */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Optional: to keep content within a max width */
+    height: 100%;
+    gap: 1em; /* Space between the sections */
+}

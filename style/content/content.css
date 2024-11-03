@@ -1,0 +1,6 @@
+.main-page {
+    flex-grow: 1;
+    padding: 2em;
+    background-color: antiquewhite;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}

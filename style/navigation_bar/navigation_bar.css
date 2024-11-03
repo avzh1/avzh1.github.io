@@ -1,0 +1,75 @@
+/* The side navigation menu */
+.navigation_bar {
+    margin: 0;
+    padding: 10px;
+    width: clamp(300px, 15vw, 15vw);
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s ease; /* Add transition for smooth animation */
+}
+
+.navigation_bar .pfp {
+    background-color: black;
+    width: clamp(300px, 15vw, 15vw);
+    height: clamp(300px, 15vw, 15vw);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: all 0.5s ease; /* Add transition for smooth animation */
+}
+
+
+/* Sidebar links */
+.navigation_bar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+ /*Active/current link */
+.navigation_bar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links on mouse-over */
+.navigation_bar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: clamp(300px + 10px, 15vw + 10px, 15vw + 10px);
+    padding: 1px 16px;
+    height: 1000px;
+    transition: all 0.5s ease;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .navigation_bar {
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+    .navigation_bar a {float: left;}
+    div.content {margin-left: 0;}
+    .navigation_bar .pfp {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .navigation_bar a {
+        text-align: center;
+        float: none;
+    }
+}
+
