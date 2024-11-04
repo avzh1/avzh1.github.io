@@ -54,7 +54,7 @@
 
 /* About text styling */
 .about p {
-    margin-bottom: 1em;
+    margin-bottom: 0; !important;
     font-size: 1em;
     line-height: 1.6;
     text-align: left;
