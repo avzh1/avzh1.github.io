@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,17 +14,12 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    padding: 1em; /* Adds a consistent offset around the content */
+    /*padding: 1em; !* Adds a consistent offset around the content *!*/
     width: 80%; /* Takes up 80% of the viewport width */
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
     max-width: 1800px; /* Optional max width for readability on larger screens */
     margin: auto; /* Centers body within the viewport */
-}
-
-/* Layout styling */
-.container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px; /* Optional: to keep content within a max width */
-    height: 100%;
-    gap: 1em; /* Space between the sections */
+    box-sizing: border-box;
+    overflow: auto;
 }
