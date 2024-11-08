@@ -1,58 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anton Zhitomirsky</title>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--        <link rel="stylesheet" href="style/navigation_bar/navigation_bar.css">-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="style/global.css">
-        <link rel="stylesheet" href="style/about/about.css">
-        <link rel="stylesheet" href="style/content/content.css">
-    </head>
-
-    <div class="about">
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top-banner">
+    <div class="profile-picture">Profile picture</div>
+    <div class="name-section">
         <h1>Anton Zhitomirsky</h1>
-
-        <img src="content/images/pfp.jpg">
-
-        <h2>Accounts</h2>
-
-        <ul>
-            <li><a href="https://www.linkedin.com/in/anton-v-zh/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://medium.com/@avzh1"><i class="fa-brands fa-medium"></i></a></li>
-            <li><a href="https://github.com/avzh1"><i class="fa-brands fa-github"></i></a></li>
-            <li>
-                <a href="https://leetcode.com/u/anton_v_zh/">
-                    <svg width="18" height="18" viewBox="0 0 95 111" fill="white" xmlns="http://www.w3.org/2000/svg" class="h-full w-auto max-w-none">
-                        <path d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z"></path>
-                    </svg>
-                </a>
-            </li>
-
-
-        </ul>
-
-        <h2>About</h2>
-
-        <p>Hi There! Welcome to my page.</p>
-
-        <p>I'm a recent 1st class graduate from Imperial College London (Computer Science with ML & AI).</p>
-        <p>I have expedited my software knowledge through diverse experiences across four multidisciplinary programming positions.
-            I have made valuable contributions with KDB for bullish financial risk technologies at JPMorgan,
-            provided tailored academic tutoring at Imperial College London,
-            participated in building lifesaving services using Salesforce for NovaUkraine charity,
-            and repaired complex 3D tools for a monolithic automotive company at Siemens.</p>
-        <p>Most importantly, I am a daily learner and absolutely curious about digesting all latest technological advancements!</p>
-
+        <div class="social-icons">
+            <span>Icon</span>
+            <span>Icon</span>
+            <span>Icon</span>
+            <span>Icon</span>
+        </div>
+        <button class="resume-button">Resume</button>
     </div>
+</div>
 
-    <div class="main-page">
-        Please be patient! This is my first front-end baby and it's got a bit of a stunted growth depending on when you see this...
+<div class="introduction">
+    <p>Hi There! Welcome to my page.</p>
+</div>
+
+<div class="projects-section">
+    <h2>Projects</h2>
+    <p class="subtext">Programming projects.</p>
+    <div class="project-carousel">
+        <div class="arrow left-arrow" onclick="scrollProjects(-1)">&#9664;</div>
+        <div class="project-cards" id="projectCards">
+            <div class="project-card">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Deep Learning</span>
+                    <span>Pandas</span>
+                </div>
+                <div class="github-icon">GitHub</div>
+            </div>
+        </div>
+        <div class="arrow right-arrow" onclick="scrollProjects(1)">&#9654;</div>
     </div>
+</div>
 
+<div class="books-section">
+    <h2>Books</h2>
+    <p class="subtext">A list of books I've been enjoying and recommend!</p>
+    <div class="book-carousel">
+        <div class="arrow left-arrow" onclick="scrollBooks(-1)">&#9664;</div>
+        <div class="book-covers" id="bookCovers">
+            <div class="book-cover">Book Cover</div>
+        </div>
+        <div class="arrow right-arrow" onclick="scrollBooks(1)">&#9654;</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
